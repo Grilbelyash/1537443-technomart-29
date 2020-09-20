@@ -15,10 +15,9 @@
       </ul>
         <div>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</div>
         <p>+7(812)555-05-55<br>г. Санкт-Перербург, ул. Б. Конюшенная, д. 19/8</p>
-       <!-- имя и иконка пользователя являются ссылкой на профайл, а иконка выхода — на страницу деавторизации (не понял куда именно, пока оставил так) -->
-        <a href="profile.html"><img src="#" alt="user"></a>
+       <!-- оставил ссылки на авторизацию и выход, добавлю классы и иконки через сss -->
         <a href="profile.html">Равшан Джамшутович</a>
-        <a href="deauthorize.html"><img src="#" alt="leave"></a>
+        <a href="deauthorize.html"></a>
         <input type="button" value="Мои заказы">
         <input type="button" value="Личный кабинет">
     <nav>
@@ -166,24 +165,3 @@
 </html>
 
 
-<!-- я не знаю, как сделать боковое меню, поэтому напишу пока что тут, потом перенесу куда нужно-->
-<!--
-<h2>Фильтр:</h2>   нагуглил про двойной слайдер, нашел пару вариантов через jquery или как тут https://codepen.io/alpden/pen/XKLbbp, но это пока рано для меня
- Допустим что тут слайдер и цены -->
-
-<h2>Производители:</h2> <!-- тег стронг нельзя, в css будет font-weight bold -->
- <form action="#" method="post">
-   <label>
-  <input type="radio" name="firms" value="bosch" checked> bosch;
-  <input type="radio" name="firms" value="интерскол"> интерскол;
-  <input type="radio" name="firms" value="makita" checked> makita; <!-- я хотел сделать так, чтобы по умолчанию было выделено 2, но что-то пошло не так -->
-  <input type="radio" name="firms" value="dewalt"> dewalt;
-  <input type="radio" name="firms" value="hitachi"> hitachi;  
-<h2>Питание:</h2>
- <label>
-  <input type="radio" name="power" value="battery" checked> Аккумуляторные;
-  <input type="radio" name="power" value="net"> Сетевые;
-  </label>
-  <input type="submit" value="Показать">
-   </form> 
- 

@@ -1,0 +1,317 @@
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-gray: #3D546F;
+    --dark-gray: #32425C;
+    --dark: #293449;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --white: #FFFFFF;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --special-lightorange: #FFDA96;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+  }
+
+body {
+    font-family: "Cuprum", Arial, sans-serif;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic-background);
+  }
+
+a {
+    text-decoration: none;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+/* Main navigation */
+.main-header {
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.0001);
+}
+.main-navigation {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+  }
+.main-navigation-wrapper {
+    background-color: var(--dark-gray);
+}
+.site-navigation {
+    list-style: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.second-navigation {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+.ordering {
+  position: absolute;
+  color: var(--basic-green);
+}
+.head-description {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+
+}
+
+.phone-head {
+  font-weight: bold;
+  color: var(--basic-red);
+
+}
+.enter {
+  font-size: 21px;
+  line-height: 21px; 
+}
+.registration {
+  font-size: 21px;
+  line-height: 21px; 
+}
+/* Main */
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; 
+}
+.corner-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+.perforators {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;   
+  background-image: url(img/perforators.jpg);
+  background-repeat: no-repeat;
+}
+.perforators-sign {
+  font-size: 18px;
+  line-height: 24px;
+}
+.button {
+  font-size: 14px;
+  line-height: 18px;  
+  color: var(--white);
+  background-color: var(--basic-red);
+  text-align: center;
+  text-transform: uppercase;  
+  border: none;
+}
+/* Популярные товары */
+
+h2 .popular {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color:#F9F5F0;
+}
+.perforators-list {
+  list-style: none;
+}
+.perforator-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.perforator-old-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration-line: line-through;
+}
+.perforator-new-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+.popular-produser-table {
+  list-style: none; 
+}
+.perforator-3000 {
+  background-image: url(img/perforator-3000.jpg);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.perforator-6000 {
+  background-image: url(img/perforator-6000.jpg);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.perforator-2000 {
+  background-image: url(img/perforator-2000.jpg);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.perforator-9000 {
+  background-image: url(img/perforator-9000.jpg);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+/* Популярные производители */
+
+.bosch {
+  background-image: url(img/bosch.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.makita {
+  background-image: url(img/makita.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.dewalt {
+  background-image: url(img/dewalt.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.interscol {
+  background-image: url(img/interscol.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.hitachi {
+  background-image: url(img/hitachi.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.lg {
+  background-image: url(img/lg.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.aeg {
+  background-image: url(img/aeg.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+.metabo {
+  background-image: url(img/metabo.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+}
+
+/* Сервисы */
+.servises {
+  background-color: var(--basic-background);
+}
+h2 .servises-name {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.servises-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+}
+.delivery {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.delivery-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+}
+/* Низ сайта, перед футером */
+.page-footer .main-footer {
+  background-color: var(--dark-gray);
+}
+.footer-bottom {
+  background-color: var(--dark);
+}
+h2 .company-contacts {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.company-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+}
+.transport-company-item {
+  font-size: 18px;
+  line-height: 24px;
+}
+.contacts-descriiption {
+  font-size: 18px;
+  line-height: 24px;
+}
+/* Футер */
+.footer-address {
+  color: var(--basic-background);
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer-item-one {
+  color: var(--basic-background);
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer-item-two {
+  color: var(--special-lightorange);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+.copyrights {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}
+.footer-connection {
+  color: var(--white);
+  font-size: 16px;
+  line-height: 18px;
+
+}
+.footer-link {
+  color: var(--special-yellowlight);
+  font-size: 16px;
+  line-height: 18px;
+
+}
