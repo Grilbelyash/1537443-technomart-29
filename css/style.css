@@ -16,18 +16,21 @@
     --success: #5FBB2D;
     --warning: #FFBF47;
     --error: #BA2732;
+    --sand: #F9F5F0;
   }
 
 body {
     font-family: "Cuprum", Arial, sans-serif;
+    font-style: normal;
     min-width: 960px;
     margin: 0;
     padding: 0;
-    background-color: var(--basic-background);
+    background-color: var(--white);
   }
 
 a {
     text-decoration: none;
+    color: var(--dark)
   }
 
 img {
@@ -46,13 +49,23 @@ img {
     line-height: 24px;
     color: var(--white);
   }
+  .main-header-logo {
+    color: var(--white);
+    background-color: var(--basic-red);
+  }
 .main-navigation-wrapper {
     background-color: var(--dark-gray);
+}
+.header-top {
+  background-color: var(--dark);
 }
 .site-navigation {
     list-style: none;
     font-size: 18px;
     line-height: 24px;
+}
+.site-navigation-item {
+  color: var(--white);
 }
 
 .second-navigation {
@@ -60,9 +73,24 @@ img {
   font-size: 18px;
   line-height: 24px;
 }
+.market {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+.basket {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+
 .ordering {
-  position: absolute;
-  color: var(--basic-green);
+  background-color: var(--basic-green);
+  color: var(--white);
 }
 .head-description {
   font-style: italic;
@@ -74,44 +102,93 @@ img {
 }
 
 .phone-head {
+  font-style: normal;
   font-weight: bold;
   color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
 
 }
+.head-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
 .enter {
+  background-color: var(--white);
   font-size: 21px;
   line-height: 21px; 
 }
 .registration {
+  background-color: var(--white);
   font-size: 21px;
   line-height: 21px; 
 }
+.search {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white)
+}
 /* Main */
+.internet-market {
+  visibility: hidden;
+}
+.catalog-name {
+  visibility: hidden;
+}
+.corner-blocks {
+  color: var(--white);
+}
+.materials {
+  background-color: var(--special-yellow);
+}
+.tools {
+  background-color: var(--special-blue);
+}
+.tech {
+  background-color: var(--special-lilac);
+}
+.free {
+  background-color: var(--special-greenlight);
+}
+.delivery{
+  background-color: var(--warning);
+}
 
-h3 {
+.headline {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px; 
+  color: var(--white);
 }
 .corner-item {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  color: var(--white);
+  text-transform: uppercase;
 }
+
 .perforators {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  text-transform: uppercase;   
-  background-image: url(img/perforators.jpg);
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 .perforators-sign {
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+}
+.gallery {
+  background-color: var(--dark-gray); /* прописал фон чтобы были читабельны белые надписи, потом перенесу их на картинку и уберу фон*/
 }
 .button {
   font-size: 14px;
@@ -124,11 +201,11 @@ h3 {
 }
 /* Популярные товары */
 
-h2 .popular {
+.popular {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color:#F9F5F0;
+  background-color: var(--sand);
 }
 .perforators-list {
   list-style: none;
@@ -163,65 +240,38 @@ h2 .popular {
 .popular-produser-table {
   list-style: none; 
 }
-.perforator-3000 {
-  background-image: url(img/perforator-3000.jpg);
-  background-color: var(--white);
-  background-repeat: no-repeat;
-}
-.perforator-6000 {
-  background-image: url(img/perforator-6000.jpg);
-  background-color: var(--white);
-  background-repeat: no-repeat;
-}
-.perforator-2000 {
-  background-image: url(img/perforator-2000.jpg);
-  background-color: var(--white);
-  background-repeat: no-repeat;
-}
-.perforator-9000 {
-  background-image: url(img/perforator-9000.jpg);
-  background-color: var(--white);
-  background-repeat: no-repeat;
-}
+
 /* Популярные производители */
 
 .bosch {
-  background-image: url(img/bosch.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .makita {
-  background-image: url(img/makita.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .dewalt {
-  background-image: url(img/dewalt.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .interscol {
-  background-image: url(img/interscol.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .hitachi {
-  background-image: url(img/hitachi.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .lg {
-  background-image: url(img/lg.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .aeg {
-  background-image: url(img/aeg.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
 .metabo {
-  background-image: url(img/metabo.png);
   background-color: var(--white);
   background-repeat: no-repeat;
 }
@@ -230,7 +280,9 @@ h2 .popular {
 .servises {
   background-color: var(--basic-background);
 }
-h2 .servises-name {
+.servises-name {
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -238,9 +290,18 @@ h2 .servises-name {
 .servises-description {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+}
+.features {
+  list-style: none;
+}
+.features-item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
 }
 .delivery {
   font-size: 30px;
@@ -250,7 +311,7 @@ h2 .servises-name {
 .delivery-description {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
 }
@@ -261,7 +322,9 @@ h2 .servises-name {
 .footer-bottom {
   background-color: var(--dark);
 }
-h2 .company-contacts {
+.company-contacts {
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -269,23 +332,39 @@ h2 .company-contacts {
 .company-description {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+}
+.transport-company {
+  list-style: none;
 }
 .transport-company-item {
   font-size: 18px;
   line-height: 24px;
 }
 .contacts-descriiption {
-  font-size: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
   line-height: 24px;
 }
 /* Футер */
+.footer-logo {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+.footer-contacts {
+  background-color: var(--basic-gray);
+}
 .footer-address {
   color: var(--basic-background);
   font-size: 18px;
   line-height: 24px;
+}
+.main-footer {
+  background-color: var(--basic-gray);
 }
 .footer-item-one {
   color: var(--basic-background);
@@ -299,6 +378,8 @@ h2 .company-contacts {
 
 }
 .copyrights {
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
@@ -314,4 +395,13 @@ h2 .company-contacts {
   font-size: 16px;
   line-height: 18px;
 
+}
+.social-web {
+  visibility: hidden;
+}
+.social {
+  list-style: none;
+}
+.social-button {
+  color: var(--white)
 }
