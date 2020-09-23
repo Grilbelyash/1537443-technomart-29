@@ -40,7 +40,7 @@ img {
 /* Main navigation */
 .main-header {
   font-style: normal;
-  background: rgba(0, 0, 0, 0.0001);
+  background: var(--basic-background);
 }
 .main-navigation {
     font-style: normal;
