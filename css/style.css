@@ -17,6 +17,7 @@
     --warning: #FFBF47;
     --error: #BA2732;
     --sand: #F9F5F0;
+    --special-catalog: #F7F3EC;
   }
 
 body {
@@ -404,4 +405,116 @@ img {
 }
 .social-button {
   color: var(--white)
+}
+/* КАТАЛОГ */
+.name {
+  background-color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+}
+.lk {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* Main catalog */
+.inside-navigation {
+  list-style: none;
+}
+.inside-navigation-item {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.perforator-main {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--basic-background);
+}
+/* Сортировка */
+
+.sorting {
+  background-color: var(--special-catalog);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-type {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-function {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.perforators-list {
+  list-style: none;
+}
+.pages {
+  list-style: none;
+}
+.page-1 {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #EE3643;
+  background-color: var(--basic-red);
+}
+.page-2 {
+  border: 1px solid #E5E5E5;
+}
+.page-3 {
+  border: 1px solid #E5E5E5;
+}
+.next-page {
+  border: 1px solid #E5E5E5;
+}
+/* описание перфоратора как инструмента, над футером*/
+.perforators-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+.perforators-description-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.perforators-catalog {
+  background-color: var(--basic-background);
 }
