@@ -18,11 +18,13 @@
           <li><a class ="ordering" href="blank.html">Оформить заказ</a></li>
         </ul>
       </div>
-          <div class="head-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</div>
-          <p class="phone-head">+7(812)555-05-55</p><p class="head-address">г. Санкт-Перербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="main-header-bar">
+          <div class="header-colunm-1"><p class="head-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p></div>
+          <div class="header-column-2"><p class="phone-head">+7(812)555-05-55</p><p class="head-address">г. Санкт-Перербург, ул. Б. Конюшенная, д. 19/8</p></div>
          <!-- регистрация --> 
-         <a class="enter" href="blank.html">Войти</a>
-         <a class ="registration" href="blank.html">Регистрация</a>
+         <div class="header-colunm-3"><a class="enter" href="blank.html">Войти</a>
+         <a class ="registration" href="blank.html">Регистрация</a></div>
+         </div>
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
@@ -37,9 +39,11 @@
         </div>
       </nav>
     </header>
+    <div class="main-content">
     <main class="container">
       <h1 class="internet-market">Интернет-магазин «Техномарт»</h1>
       <section class="corner-blocks"> 
+        <div class="grid-top">
       <div class="materials">
         <h3 class="headline">Материалы</h3>
         <a class="materials-item corner-item" href="blank.html">На любой вкус</a>
@@ -52,6 +56,20 @@
         <h3 class="headline">Техника</h3>
         <a class ="tech-item corner-item" href="blank.html">Для стройки</a>
       </div>
+    
+      <div class="gallery"> 
+        <h2 class="catalog-name">Каталог</h2> 
+        <p class="perforators">Перфораторы</p><p class="perforators-sign">Настоящие мужские игрушки</p>
+       <figure class="gallery-content"> 
+           <a href="#">
+            <img src="img/perforators.jpg" width="620" height="266" alt="Мужик с перфоратором">
+          </a>
+        </figure>
+        <button class="gallery-button gallery-button-left" type="button">Влево</button>
+        <button class="gallery-button gallery-button-right" type="button">Вправо</button>
+        <a class="button" href="catalog.html">Открыть каталог</a>
+          <!-- я пока убрал эту картинку, не могу отцентрировать ее-->
+       </div>
       <div class="free">
         <h3 class="headline">Скидки 50%</h3>
         <a class="free-item corner-item" href="blank.html">На 350 товаров</a>
@@ -60,22 +78,13 @@
         <h3 class="headline">Доставка</h3>
         <a class="delivery-item corner-item" href="blank.html">Бесплатно</a>
       </div>
-      <div class="gallery"> 
-        <h2 class="catalog-name">Каталог</h2> <!-- это нужно скрыть -->
-        <p class="perforators">Перфораторы</p><p class="perforators-sign">Настоящие мужские игрушки</p>
-        <figure class="gallery-content"> <!--надо как-то перенести надписи и стрелки на картинку -->
-          <a href="#">
-            <img src="img/perforators.jpg" width="620" height="266" alt="Мужик с перфоратором">
-          </a>
-        </figure>
-      </div>
-        <button class="gallery-button gallery-button-left" type="button">Влево</button>
-        <button class="gallery-button gallery-button-right" type="button">Вправо</button>
-        <a class="button" href="catalog.html">Открыть каталог</a>
+    </div>
       </section>
+    
       <section class="popular-product">
         <h2 class="popular">Популярные товары</h2>
         <a class="button" href="blank.html">Все популярные товары</a>
+      <div class="popular-products">
         <ul class="perforators-list">
           <li><a class="perforator-description perforator-9000" href="#">
             <img src="img/perforator-9000.jpg" width="184" height="164" alt="BOSCH BFG 9000">Перфоратор BOSCH BFG 9000</a>
@@ -97,10 +106,12 @@
             <div class="perforator-new-price">12500 Р.</div>
           </li>
         </ul>
+      </div>
       </section>
       <section class="popular-producer">
         <h2 class="popular">Популярные производители</h2>
         <a class="button" href="blank.html">Все производители</a>
+      <div class="popular-produser-table-grid">
         <ul class="popular-produser-table">
           <li><a class="bosch" href="#"><img src="img/bosch.png" width="220" height="145" alt="bosch"></a></li>
           <li><a class="makita" href="#"><img src="img/makita.png" width="123" height="40" alt="makita"></a></li>
@@ -111,11 +122,13 @@
           <li><a class="aeg" href="#"><img src="img/aeg.png" width="151" height="96" alt="aeg"></a></li>
           <li><a class="metabo" href="#"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a></li>
         </ul>
+      </div>
       </section>
+    </div>
       <section class="servises">
         <h2 class="servises-name">Сервисы</h2>
         <p class="servises-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <!-- Тут я без понятия пока что как сделать это меню, чтобы рядом отображалось, оставлю пока что так. --> 
+        
         <ul class="features">
           <li class="feature-item"><a href="#">Доставка</a></li>
           <li class="feature-item"><a href="#">Гарантия</a></li>
@@ -127,6 +140,7 @@
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!</p>
       </section>
+      <div class="company-specification-body">
       <section class="company-specification">
         <h2 class="company-contacts">Компания «Техномарт»</h2>
         <p class="company-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на <br>гастарбайтерах.</p>
@@ -141,10 +155,12 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p class="contacts-descriiption">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-        <!-- Здесь будет карта -->
+        
         <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
       </section>
+    
     </main>
+  </div>
     <footer class="main-footer">
       <section class="footer-contacts">
         <a class="footer-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="68" alt="Техномарт"></a>
@@ -152,11 +168,13 @@
       </section>
        <section>
       <nav class="footer-nav"> 
-        <ul class="site-navigation"> 
+        <ul class="site-navigation-top"> 
             <li><a class="footer-item-one" href="index.html">Компания</a></li>
             <li><a class="footer-item-one" href="blank.html">Новости</a></li>
             <li><a class="footer-item-one" href="catalog.html">Каталог</a></li>
             <li><a class="footer-item-one" href="blank.html">Доставка</a></li>
+        </ul>
+        <ul class="site-navigation-bot">
             <li><a class="footer-item-two" href="blank.html">Контакты</a></li>
             <li><a class="footer-item-two" href="blank.html">Материалы</a></li>
             <li><a class="footer-item-two" href="blank.html">Техника</a></li>
@@ -166,7 +184,7 @@
         </nav>
       </section>
       <div class="footer-bottom">
-      <section >
+      <section>
         <p class="copyrights">© 2010–2019 Компания «Техномарт»<br>Все права защищены
         </p>
       </section>
