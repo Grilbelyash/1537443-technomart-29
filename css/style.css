@@ -41,7 +41,6 @@ img {
 /* Main navigation */
 .page {
   height: 100%;
-  width: 1200px;
   clear: both;
   margin-right: auto;
   margin-left: auto;
@@ -54,8 +53,7 @@ img {
 }
 .main-header {
   
-  width: 1200px;
-  margin: auto;
+  width: auto;
   font-style: normal;
   background: var(--basic-background);
 }
@@ -379,9 +377,6 @@ ul.second-navigation li {
 /* Сервисы */
 .servises {
   background-color: var(--basic-background);
-  width: 1200px;
-  margin-left: 0;
-  margin-right: auto;
 
 }
 .servises-name {
@@ -593,7 +588,10 @@ ul.second-navigation li {
   text-transform: uppercase;
 }
 .perforators-list {
-  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3,318px);
+  gap: 20px;
 }
 .pages {
   list-style: none;
