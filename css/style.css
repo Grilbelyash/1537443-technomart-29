@@ -295,8 +295,12 @@ ul.second-navigation li {
 .perforators-list {
   display: grid;
   grid-template-columns: repeat(4,220px);
-  gap: 20px;
+  column-gap: 20px;
   list-style: none;
+}
+.perforators-columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 .perforator-description {
   font-family: "PT Sans", Arial, sans-serif;
