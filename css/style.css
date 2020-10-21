@@ -23,9 +23,8 @@
 body {
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
-    min-width: 960px;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     background-color: var(--white);
   }
 
@@ -41,16 +40,10 @@ img {
 /* Main navigation */
 .page {
   height: 100%;
-  clear: both;
   margin-right: auto;
   margin-left: auto;
 }
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
+
 .main-header {
   
   width: auto;
@@ -97,6 +90,9 @@ ul.second-navigation li {
 }
 .header-top {
   background-color: var(--dark);
+  display: flex;
+  height: 43px;
+  justify-content: flex-start;
 }
 .site-navigation-top {
     display: grid;
