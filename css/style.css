@@ -61,7 +61,6 @@ background-color: var(--basic-background);
 .main-header-bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 940px;
   margin: auto;
 }
 .main-navigation {
@@ -197,11 +196,7 @@ ul.second-navigation li {
   margin-left: auto;
   margin-right: auto;
 }
-.main-content {
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .internet-market {
   visibility: hidden;
 }
@@ -569,6 +564,7 @@ ul.second-navigation li {
 /* Main catalog */
 .inside-navigation {
   list-style: none;
+  display: flex;
 }
 .inside-navigation-item {
   font-family: "PT Sans", Arial, sans-serif;
@@ -586,9 +582,21 @@ ul.second-navigation li {
   text-transform: uppercase;
   background-color: var(--basic-background);
 }
+/* Боковое меню */
+.produsers-catalog {
+  display: flex;
+  flex-direction: column;
+}
+.supply {
+  display: flex;
+  flex-direction: column; 
+}
+
+
 /* Сортировка */
 
 .sorting {
+  display: flex;
   background-color: var(--special-catalog);
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -630,6 +638,7 @@ ul.second-navigation li {
 }
 .pages {
   list-style: none;
+  display: flex;
 }
 .page-1 {
   font-family: "PT Sans", Arial, sans-serif;
@@ -666,5 +675,10 @@ ul.second-navigation li {
   text-transform: uppercase;
 }
 .perforators-catalog {
+  background-color: var(--basic-background);
+  margin-left: auto;
+  margin-right: auto;
+}
+.grey-perforators {
   background-color: var(--basic-background);
 }

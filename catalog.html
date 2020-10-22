@@ -8,17 +8,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
+    <div class="top-dark-line">
     <header class="main-header">
-      <div class="header-top">
+      <div class="header-top container">
         <a class="main-header-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Техномарт"></a>
           <input class="search" placeholder="Поиск:" type="search">
         <ul class="second-navigation">
-          <li><a class="market" href="blank.html">Закладки:</a></li>
+          <li><a class="market" href="blank.html">Закладки:</a></li>  <!-- эти элементы я сделаю через флексы -->
           <li><a class ="basket" href="blank.html">Корзина:</a></li>
           <li><a class ="ordering" href="blank.html">Оформить заказ</a></li>
         </ul>
       </div>
-      <div class="main-header-bar">
+    </div>
+    <div class="grey-dark-line">
+    <div class="main-header-bar container">
       <div class="header-colunm-1"><p class="head-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p></div>
       <div class="header-column-2"><p class="phone-head">+7(812)555-05-55</p><p class="head-address">г. Санкт-Перербург, ул. Б. Конюшенная, д. 19/8</p></div>
      <!-- регистрация --> 
@@ -26,8 +29,8 @@
         <a class="name" href="profile.html">Равшан Джамшутович</a>
         <a class="lk" href="blank.html">Мои заказы</a>
         <a class="lk" href="blank.html">Личный кабинет</a>
-        </div>
-        </div>
+     </div>
+    </div>
     <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <ul class="site-navigation">
@@ -42,42 +45,47 @@
         </div>
       </nav>
       </header>
-      <div class="main-content">
-  <main class="container">
-    <ul class="inside-navigation">
-      <li><a class="inside-navigation-item" href="index.html"></a></li>
+    </div>
+  <main>
+    <ul class="inside-navigation container">
+      <li><a class="inside-navigation-item" href="index.html">#</a></li>
       <li><a class="inside-navigation-item" href="catalog.html">Каталог</a></li>
       <li><a class="inside-navigation-item" href="blank.html">Инструмент</a></li>
       <li><a class="inside-navigation-item" href="blank.html">Перфораторы</a></li>
     </ul>
-    <h1 class="perforator-main">Перфораторы</h1>
-  <section class="sorting">
-    <p class="sorting-item">Сортировка:</p>
-    <a class="sorting-price" href="blank.html">по цене</a>
-    <a class="sorting-type" href="blank.html">по типу</a>
-    <a class="sorting-function" href="blank.html">по функционалу</a>
-    <a class="button-up" href="blank.html">по возрастанию</a>  <!-- это пока что просто заглушки, будут стрелки -->
-    <a class="button-down" href="blank.html">по убыванию</a>
-</section>
-  <section class="perforators-columns">
+    <h1 class="perforator-main container">Перфораторы</h1>
+  
+  <section class="perforators-columns container">
   <div>
+    <p class="sorting">Фильтр:</p>
+  <h2>Цена:</h2>
+  Заглушка под будущий ползунок
   <h2>Производители:</h2>
-    <form action="#" method="post">
-    <label>
-   <input type="radio" name="firms" value="bosch" checked> bosch;
-   <input type="radio" name="firms" value="интерскол"> интерскол;
-   <input type="radio" name="firms" value="makita" checked> makita; <!-- я хотел сделать так, чтобы по умолчанию было выделено 2, но что-то пошло не так -->
-   <input type="radio" name="firms" value="dewalt"> dewalt;
-   <input type="radio" name="firms" value="hitachi"> hitachi;  
+    <form action="https://echo.htmlacademy.ru/" method="post">
+    <label class="produsers-catalog">
+   <input type="checkbox" name="bosch" value="bosch" checked> bosch;
+   <input type="checkbox" name="interskol" value="интерскол"> интерскол;
+   <input type="checkbox" name="makita" value="makita" checked> makita; 
+   <input type="checkbox" name="dewalt" value="dewalt"> dewalt;
+   <input type="checkbox" name="hitachi" value="hitachi"> hitachi; 
+   </label> 
  <h2>Питание:</h2>
-  <label>
-   <input type="radio" name="power" value="battery" checked> Аккумуляторные;
-   <input type="radio" name="power" value="net"> Сетевые;
+  <label class="supply">
+   <input type="radio" name="power" value="battery" checked>Аккумуляторные;
+   <input type="radio" name="power" value="net">Сетевые;
    </label>
    <input type="submit" value="Показать">
     </form> 
     </div>
     <div>
+      <section class="sorting">
+        <p class="sorting-item">Сортировка:</p>
+        <a class="sorting-price" href="blank.html">по цене</a>
+        <a class="sorting-type" href="blank.html">по типу</a>
+        <a class="sorting-function" href="blank.html">по функционалу</a>
+        <a class="button-up" href="blank.html">по возрастанию</a>  <!-- это пока что просто заглушки, будут стрелки -->
+        <a class="button-down" href="blank.html">по убыванию</a>
+    </section>
   <ul class="perforators-list-two">
     <li><a class="perforator-description perforator-6000" href="#">
       <img src="img/perforator-6000.jpg" width="144" height="128" alt="BOSCH BFG 6000">Перфоратор BOSCH BFG 6000</a>
@@ -124,23 +132,23 @@
   </ul>
   </div>
 </section>
-    <ul class="pages">
+    <ul class="pages container">
       <li><a class="page-1">1</a></li> <!-- это текущая, поэтому без ссылки-->
       <li><a class="page-2" href="#">2</a></li>
       <li><a class="page-3" href="#">3</a></li>
       <li><a class="next-page" href="#">Следующая</a></li>
     </ul>
-  
-  <section class="perforators-catalog">
+  <div class="grey-perforators">
+<section class="perforators-catalog container">
     <h2 class="perforators-description-name">Пара слов о перфораторах</h2>
     <p class="perforators-description">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
       Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
       В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
   </section>
-  </main>
 </div>
-  <footer class="main-footer">
-      
+  </main>
+<footer class="main-footer">
+  <div class="container">
     <a class="footer-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="68" alt="Техномарт"></a>
     <section class="footer-contacts">
       <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-55</p>
@@ -162,7 +170,9 @@
       </ul> 
     </nav>
   </section>
-  <section class="footer-bottom">
+</div>
+<div class="footer-dark">
+  <section class="footer-bottom container">
     <div><p class="copyrights">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p></div>
   <div><h2 class="social-web">Соцсети</h2> <!-- это я скрою потом, названия нет -->
     <ul class="social">
@@ -172,7 +182,9 @@
     </ul></div>
   <div><p class="footer-connection">Обратная связь:<br><a class="footer-link" href="https://blank.html">mail@htmlacademy.ru</a></p>
   <p class="footer-connection">Разработано -<br><a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
-</div></section>
+</div>
+</section>
+</div>
 </footer>
 </body>
 </html>
